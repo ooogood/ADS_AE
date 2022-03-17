@@ -34,6 +34,7 @@ public class CountedElement<E extends Comparable<E>> implements Comparable<Count
 	}
 	// count setter method
 	public void setCount( int count ) {
+		if( count < 0 ) throw new RuntimeException("Try to set count lower than zero!");
 		this.count = count;
 	}
 	
