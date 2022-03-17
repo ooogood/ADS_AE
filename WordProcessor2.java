@@ -16,7 +16,6 @@ public class WordProcessor2 {
 	 */
 	public static void main(String[] args) {
 		args = new String[]{"file0.txt","file1.txt","file2.txt"};
-		// args = new String[]{"file0.txt"};
 		BSTBag<String> bst = new BSTBag<>();
 		BSTBag<String> bst2 = new BSTBag<>();
 		BSTBag<String> bst3 = new BSTBag<>();

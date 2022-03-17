@@ -35,7 +35,6 @@ public class WordProcessor {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// args = new String[]{"file0.txt", "file1.txt", "file2.txt"};
 		//create a set of type String called wordSet
 		Set<String> wordSet = new TreeSet<>();
 		//create a set of type CountedElement<String> called countedWordSet 

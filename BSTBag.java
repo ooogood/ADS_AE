@@ -1,4 +1,5 @@
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 /**
  * @author 2669729C Ching-Yuan Chen
@@ -167,7 +168,7 @@ public class BSTBag<E extends Comparable<E>> implements Bag<E> {
 		}
 
 		public E next() {
-			if( remain == 0 ) return null;
+			if( remain == 0 ) throw new NoSuchElementException();
 			// if the topmost node is out of elements
 			while( topNodeRemain <= 0 ) {
 				for( Node<E> cur = st.pop().r; cur != null; cur = cur.l ) {
